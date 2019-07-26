@@ -2,85 +2,156 @@
 @import 'bulma.css';
 
 html {
-  background: #222;
+  background: black;
   scroll-behavior: smooth;
 }
 
 body {
   font-family: 'Roboto Mono', monospace;
-  background: #222;
+  background: black;
   height: 100vh;
 }
 
 .nav-box {
+  width: 100%;
+  line-height: 1;
+  padding: 5px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  position: fixed;
+  top: 0;
+}
+
+.round {
+  background: #151515;
+  border-radius: 50%;
   display: flex;
   flex-direction: row;
   justify-content: left;
-  align-items: flex-end;
-  line-height: 1;
-}
-
-.nav1 {
-  background: #151515;
-  font-size: 2rem;
-  height: 13rem;
-  width: 13rem;
-  border-radius: 50%;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
   color: #777;
   align-items: center;
+  font-size: 2em;
+  height: 6em;
+  width: 6em;
 }
 
-.nav2 {
-  background: #151515;
-  font-size: 1.7rem;
-  height: 11rem;
-  width: 11rem;
-  border-radius: 50%;
+.round span {
+  padding-left: 5px;
+}
+
+.hidden {
+  text-orientation: upright;
+  writing-mode: vertical-lr;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: opacity 1s, visibility 1s;
+  transition: opacity 1s, visibility 1s;
+}
+
+.links-container {
+  width: 6em;
+  font-size: 2em;
   display: flex;
   flex-direction: row;
-  justify-content: center;
-  color: #777;
-  align-items: center;
+  justify-self: right;
+  justify-content: space-between;
 }
 
-.nav3 {
-  background: #151515;
-  font-size: 1.4rem;
-  height: 9rem;
-  width: 9rem;
-  border-radius: 50%;
+.top-link, .top-link:hover {
+  color: black;
   display: flex;
-  flex-direction: row;
-  justify-content: center;
-  color: #777;
+  flex-direction: column;
   align-items: center;
+  width: 1em;
 }
 
-.nav4 {
-  background: #151515;
-  font-size: 1.1rem;
-  height: 7rem;
-  width: 7rem;
-  border-radius: 50%;
+.top-link:hover .hidden {
+  color: black;
+  opacity: 1;
+  visibility: visible;
+  text-orientation: upright;
+  writing-mode: vertical-lr;
+}
+
+.about-link, .about-link:hover {
+  color: #4AFD9C;
   display: flex;
-  flex-direction: row;
-  justify-content: center;
-  color: #777;
+  flex-direction: column;
   align-items: center;
+  width: 1em;
 }
 
-/* sticky: 
-.heading{
-  background: #ccc;
-  height: 50px;
-  line-height: 50px;
-  margin-top: 10px;
-  font-size: 30px;
-  padding-left: 10px;
-  position: -webkit-sticky;
-  position: sticky;
-  top: 0px;
+.about-link:hover .hidden {
+  color: #4AFD9C;
+  opacity: 1;
+  visibility: visible;
+  text-orientation: upright;
+  writing-mode: vertical-lr;
+}
+
+.projects-link, .projects-link:hover {
+  color: #F40F4E;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 1em;
+}
+
+.projects-link:hover .hidden {
+  color: #F40F4E;
+  /* display: unset; */
+  opacity: 1;
+  visibility: visible;
+  text-orientation: upright;
+  writing-mode: vertical-lr;
+}
+
+.contact-link, .contact-link:hover {
+  color: #FC9F77;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 1em;
+}
+
+.contact-link:hover .hidden {
+  color: #FC9F77;
+  /* display: unset; */
+  opacity: 1;
+  visibility: visible;
+  text-orientation: upright;
+  writing-mode: vertical-lr;
+}
+
+#about {
+  background-color: #4AFD9C;
+}
+
+#projects {
+  background-color: #F40F4E;
+}
+
+#contact {
+  background-color: #FC9F77;
+}
+
+
+/* #slide {
+  position: absolute;
+  top: -100px;
+  width: 100px;
+  height: 100px;
+  -webkit-animation: slide 0.5s forwards;
+  -webkit-animation-delay: 2s;
+  animation: slide 0.5s forwards;
+  animation-delay: 2s;
+}
+
+@-webkit-keyframes slide {
+  100% { left: 0; }
+}
+
+@keyframes slide {
+  100% { left: 0; }
 } */

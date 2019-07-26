@@ -72,8 +72,13 @@ body {
   writing-mode: vertical-lr;
 }
 
-.top-link, .top-link:hover, .top-link:hover .hidden  {
+.top-link img, .top-link:hover {
   color: black;
+  height: .9em;
+}
+
+.tech-link, .tech-link:hover, .tech-link:hover .hidden {
+  color: #22BDC5;
 }
 
 .about-link, .about-link:hover, .about-link:hover .hidden {
@@ -81,21 +86,29 @@ body {
 }
 
 .projects-link, .projects-link:hover, .projects-link:hover .hidden{
-  color: #F40F4E;
+  color: rgb(194, 27, 180);
 }
 
 .contact-link, .contact-link:hover, .contact-link:hover .hidden{
-  color: #FC9F77;
+  color: #FDA92E;
 }
 
 #about {
   background-color: #4AFD9C;
+  color: black;
+}
+
+#tech {
+  background-color: #22BDC5;
+  color: #4AFD9C;
 }
 
 #projects {
-  background-color: #F40F4E;
+  background-color: rgb(194, 27, 180);
+  color: #22BDC5;
 }
 
 #contact {
   background-color: #FC9F77;
+  color: rgb(194, 27, 180);
 }

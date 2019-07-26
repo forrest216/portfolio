@@ -31,9 +31,9 @@ body {
   justify-content: left;
   color: #777;
   align-items: center;
-  font-size: 2em;
-  height: 6em;
-  width: 6em;
+  font-size: 4vmin;
+  height: 26vmin;
+  width: 26vmin;
 }
 
 .hidden {
@@ -46,12 +46,13 @@ body {
 }
 
 .links-container {
-  width: 6em;
-  font-size: 2em;
+  width: 14vw;
+  font-size: 5vmin;
   display: flex;
   flex-direction: row;
   justify-self: right;
   justify-content: space-between;
+  padding-right: 1vw;
 }
 
 .top-panel {
@@ -69,7 +70,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 1em;
+  width: 2vmin;
 }
 
 .nav-link:hover .hidden {
@@ -81,7 +82,8 @@ body {
 
 .top-link img, .top-link:hover {
   color: black;
-  height: .9em;
+  height: 4.8vmin;
+  padding-top: .8vmin;
 }
 
 .icon {
@@ -111,6 +113,14 @@ body {
 #about {
   background-color: #4AFD9C;
   color: black;
+}
+
+.section-title {
+  font-size: 5vmin;
+}
+
+.section-subtitle {
+  font-size: 3vmin;
 }
 
 #tech {

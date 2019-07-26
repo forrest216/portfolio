@@ -70,7 +70,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 2vmin;
+  width: 2.5vmin;
 }
 
 .nav-link:hover .hidden {
@@ -117,6 +117,7 @@ body {
 
 .section-title {
   font-size: 5vmin;
+  max-width: 80vw;
 }
 
 .section-subtitle {
@@ -136,4 +137,20 @@ body {
 #contact {
   background-color: #FC9F77;
   color: rgb(194, 27, 180);
+}
+
+@media (max-width: 768px) {
+  .links-container {
+    width: 20vmin;
+    font-size: 6vmin;
+  }
+
+  .top-link img, .top-link:hover {
+    height: 5vmin;
+    padding-top: .8vmin;
+  }
+
+  .nav-link, .nav-link:hover {
+    width: 3vmin;
+  }
 }

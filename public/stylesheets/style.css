@@ -58,70 +58,34 @@ body {
   justify-content: space-between;
 }
 
-.top-link, .top-link:hover {
+.nav-link, .nav-link:hover {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 1em;
+}
+
+.nav-link:hover .hidden {
+  opacity: 1;
+  visibility: visible;
+  text-orientation: upright;
+  writing-mode: vertical-lr;
+}
+
+.top-link, .top-link:hover, .top-link:hover .hidden  {
   color: black;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 1em;
 }
 
-.top-link:hover .hidden {
-  color: black;
-  opacity: 1;
-  visibility: visible;
-  text-orientation: upright;
-  writing-mode: vertical-lr;
-}
-
-.about-link, .about-link:hover {
+.about-link, .about-link:hover, .about-link:hover .hidden {
   color: #4AFD9C;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 1em;
 }
 
-.about-link:hover .hidden {
-  color: #4AFD9C;
-  opacity: 1;
-  visibility: visible;
-  text-orientation: upright;
-  writing-mode: vertical-lr;
-}
-
-.projects-link, .projects-link:hover {
+.projects-link, .projects-link:hover, .projects-link:hover .hidden{
   color: #F40F4E;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 1em;
 }
 
-.projects-link:hover .hidden {
-  color: #F40F4E;
-  /* display: unset; */
-  opacity: 1;
-  visibility: visible;
-  text-orientation: upright;
-  writing-mode: vertical-lr;
-}
-
-.contact-link, .contact-link:hover {
+.contact-link, .contact-link:hover, .contact-link:hover .hidden{
   color: #FC9F77;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 1em;
-}
-
-.contact-link:hover .hidden {
-  color: #FC9F77;
-  /* display: unset; */
-  opacity: 1;
-  visibility: visible;
-  text-orientation: upright;
-  writing-mode: vertical-lr;
 }
 
 #about {
@@ -135,23 +99,3 @@ body {
 #contact {
   background-color: #FC9F77;
 }
-
-
-/* #slide {
-  position: absolute;
-  top: -100px;
-  width: 100px;
-  height: 100px;
-  -webkit-animation: slide 0.5s forwards;
-  -webkit-animation-delay: 2s;
-  animation: slide 0.5s forwards;
-  animation-delay: 2s;
-}
-
-@-webkit-keyframes slide {
-  100% { left: 0; }
-}
-
-@keyframes slide {
-  100% { left: 0; }
-} */

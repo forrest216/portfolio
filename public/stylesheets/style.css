@@ -36,10 +36,6 @@ body {
   width: 6em;
 }
 
-.round span {
-  padding-left: 5px;
-}
-
 .hidden {
   text-orientation: upright;
   writing-mode: vertical-lr;
@@ -56,6 +52,17 @@ body {
   flex-direction: row;
   justify-self: right;
   justify-content: space-between;
+}
+
+.top-panel {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.round span {
+  padding-left: 5px;
 }
 
 .nav-link, .nav-link:hover {
@@ -75,6 +82,14 @@ body {
 .top-link img, .top-link:hover {
   color: black;
   height: .9em;
+}
+
+.icon {
+  color: #4AFD9C;
+}
+
+.icon:hover {
+  color: rgba(74, 253, 154, 0.596);
 }
 
 .tech-link, .tech-link:hover, .tech-link:hover .hidden {

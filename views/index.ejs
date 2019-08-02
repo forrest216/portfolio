@@ -1,60 +1,100 @@
 <%- include('./partials/header') %>
 <body>
-  <section class="hero is-grey-darker is-fullheight">
-    <span class="round has-text-grey has-text-weight-normal">Build<br>Something.</span>
-    <div class="section nav-box">
-      <div class="links-container">
-        <a href="#" class="top-link nav-link"><img src="/images/uparrow.png" alt="TOP"></a>
-        <a href="#about" class="about-link nav-link">A<span class="hidden">BOUT</span></a>
-        <a href="#tech" class="tech-link nav-link">T<span class="hidden">ECH</span></a>
-        <a href="#projects" class="projects-link nav-link">P<span class="hidden">ROJECTS</span></a>
-        <a href="#contact" class="contact-link nav-link">C<span class="hidden">ONTACT</span></a>
+  <div class="section nav-box">
+    <div class="nav-links-container">
+      <a href="#" class="top-link nav-link nav-link-container">
+        <img id="upBlack" src="/images/uparrow.png" alt="TOP">
+        <img id="upWhite" src="/images/white.png" alt="TOP">
+      </a>
+      <div class="nav-link-container"> 
+        <a href="#about" class="about-link nav-link">A</a>
+        <a href="#about" class="about-link pop-down">
+          <span>BOUT</span>
+        </a>
+      </div>
+      <div class="nav-link-container"> 
+        <a href="#tech" class="tech-link nav-link">T</a>
+        <a href="#tech" class="tech-link pop-down">
+          <span>ECH</span>
+        </a>
+      </div>
+      <div class="nav-link-container"> 
+        <a href="#projects" class="projects-link nav-link">P</a>
+        <a href="#projects" class="projects-link pop-down">
+          <span>ROJECTS</span>
+        </a>
+      </div>
+      <div class="nav-link-container"> 
+        <a href="#contact" class="contact-link nav-link">C</a>
+        <a href="#contact" class="contact-link pop-down">
+          <span>ONTACT</span>
+        </a>
       </div>
     </div>
+  </div>
+  <section id="home">
+    <span class="forrest">Forrest J. Smith</span>
     <div class="hero-body top-panel">
       <div class="container">
+        
       </div>
-      <a href="#about" class="icon"><i class="fas fa-chevron-down fa-2x"></i></a>
     </div>
   </section>
-  <div>
-    <section id="about" class="hero is-fullheight">
-      <h1 class="section-title">
-        Nice to Meet You
-      </h1>
-      <div class="hero-body">
-        <div class="container"></div>
+  <section id="about">
+    <h1 class="about-title">It's nice to meet you. Now meet me:</h1>
+
+        <div class="about-intro">
+          <p>
+            I've had a lot of jobs over the years and loved each of them in their own special way. A shortened list:
+          </p>
         </div>
-      </div>
-    </section>
-    <section id="tech" class="hero is-fullheight">
-      <h1 class="section-title">
-        Technologies I've known and loved
-      </h1>
-      <div class="hero-body">
-        <div class="container">
+        <div class="about-content">
+          <img class="about-image" src="images/coffee.JPG" alt="Dancehall Road Coffe Company">
+          <p>
+            I have had almost every coffee job that there is, including that time I planted an organic coffee farm on the Big Island in Hawaii.
+          </p>
         </div>
-      </div>
-    </section>
-    <section id="projects" class="hero is-fullheight">
-      <h1 class="section-title">
-        The Skills to Pay the Bills
-      </h1>
-      <div class="hero-body">
-        <div class="container">
+        <div class="about-content">
+          <p>
+            I have had almost every restaurant job that there is, from cooking on the line of a James Beard award-winning chef in Seattle to serving as Maître D', host, and bar manager at a Michelin-starred restaurant here in SF.
+          </p>
+          <img class="about-image" src="images/JBSBP.jpg" alt="Beard medal">
         </div>
-      </div>
-    </section>
-    <section id="contact" class="hero is-fullheight">
-      <h1 class="section-title">
-        Get at Me
-      </h1>
-      <div class="hero-body">
-        <div class="container">
+        <div class="about-content">
+          <img class="about-image" src="images/ForrestFP.jpg" alt="FP">
+          <p>
+            I worked my way from floor scrubber and keg washer to senior brewer on staff at Fort Point Beer Company.
+          </p>
         </div>
+        <div class="about-content">
+          <p>
+            Now I work in software. I love solving puzzles and diagnosing problems of all kinds. I love making things look pretty. I love data and I love neat, clean code.
+          </p>
+          <img class="about-image" src="images/catcoder.gif" alt="awww, kitty">
+        </div>
+
+  </section>
+  <section id="tech">
+    <h1 class="section-title">Technologies I've known and loved</h1>
+    <div class="hero-body">
+      <div class="container">
       </div>
-    </section>
-  </div>
+    </div>
+  </section>
+  <section id="projects">
+    <h1 class="section-title">The Skills to Pay the Bills</h1>
+    <div class="hero-body">
+      <div class="container">
+      </div>
+    </div>
+  </section>
+  <section id="contact">
+    <h1 class="section-title">Get at Me</h1>
+    <div class="hero-body">
+      <div class="container">
+      </div>
+    </div>
+  </section>
 </body>
 
 <%- include('./partials/footer') %>

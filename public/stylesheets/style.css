@@ -1,6 +1,7 @@
 @import 'normalize.css';
 @import 'bulma.css';
 
+
 html {
   background: black;
   scroll-behavior: smooth;
@@ -12,47 +13,33 @@ body {
   height: 100vh;
 }
 
+img {
+  max-width: unset;
+}
+
 .nav-box {
   width: 100%;
-  line-height: 1;
+  line-height: 1; 
   padding: 5px;
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
   position: fixed;
   top: 0;
+  z-index: 3;
 }
 
-.round {
-  background: #151515;
-  border-radius: 50%;
-  display: flex;
-  flex-direction: row;
-  justify-content: left;
-  color: #777;
-  align-items: center;
-  font-size: 4vmin;
-  height: 26vmin;
-  width: 26vmin;
-}
-
-.hidden {
-  text-orientation: upright;
-  writing-mode: vertical-lr;
-  opacity: 0;
-  visibility: hidden;
-  -webkit-transition: opacity 1s, visibility 1s;
-  transition: opacity 1s, visibility 1s;
-}
-
-.links-container {
-  width: 14vw;
-  font-size: 5vmin;
+.nav-links-container {
+  font-size: 6vmin;
   display: flex;
   flex-direction: row;
   justify-self: right;
   justify-content: space-between;
   padding-right: 1vw;
+}
+
+.nav-link {
+  z-index: 3;
 }
 
 .top-panel {
@@ -62,28 +49,81 @@ body {
   align-items: center;
 }
 
-.round span {
-  padding-left: 5px;
+.about-title {
+  margin-bottom: 2vh;
+  font-size: 5vmin;
+  width: 100vw;
 }
 
-.nav-link, .nav-link:hover {
+.about-intro {
+  padding: 0 1vw;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 2.5vmin;
+  flex-direction: row;
+  font-size: 3vmin;
+  width: 80vw;
+  height: 10vh;
 }
 
-.nav-link:hover .hidden {
-  opacity: 1;
-  visibility: visible;
-  text-orientation: upright;
-  writing-mode: vertical-lr;
-}
-
-.top-link img, .top-link:hover {
+hr {
+  width: 100vw;
   color: black;
-  height: 4.8vmin;
+}
+
+.about-content {
+  padding: 0 1vw;
+  display: flex;
+  flex-direction: row;
+  font-size: 3vmin;
+  width: 100vw;
+  height: 20vh;
+  align-items: center;
+}
+
+
+.main-image {
+  height: 90vw;
+  width: 90vw;
+}
+
+.about-image {
+  height: 100%;
+  
+}
+
+.forrest {
+  padding-left: 5px;
+  display: flex;
+  width: 30vw;
+  z-index: 1;
+  position: fixed;
+  top: 70vh;
+  font-size: 4vmin;
+  color: #4AFD9C;
+}
+
+#footer {
+  border-bottom: 12vh solid black;
+  border-right: 100vw solid transparent;
+  position: absolute;
+  bottom: -400vh;
+  left: 0px;
+}
+
+.top-link img {
+  height: 5vmin;
   padding-top: .8vmin;
+}
+
+.top-link:hover #upBlack {
+  display: none;
+}
+
+.top-link:hover #upWhite {
+  display: inherit;
+}
+
+.top-link #upWhite {
+  display: none;
 }
 
 .icon {
@@ -94,12 +134,43 @@ body {
   color: rgba(74, 253, 154, 0.596);
 }
 
-.tech-link, .tech-link:hover, .tech-link:hover .hidden {
-  color: #22BDC5;
+.nav-link-container {
+  display: flex;
+  flex-direction: column;
+  overflow-wrap: break-word;
+  width: 36px;
+  text-align: center;
+  line-height: 1;
+  margin: 10px 10px 0px 10px;
 }
 
-.about-link, .about-link:hover, .about-link:hover .hidden {
+.nav-link-container:hover {
+  background: black;
+}
+
+.nav-link-container:hover .pop-down {
+  top: 5vh;
+}
+
+.pop-down {
+  overflow-wrap: break-word;
+  width: 36px;
+  text-align: center;
+  text-transform: uppercase;
+  line-height: 1;
+  position: absolute;
+  top: -100vh;
+  transition: all .5s;
+  padding-top: 2vh;
+  background-color: black;
+}
+
+.about-link, .about-link:hover {
   color: #4AFD9C;
+}
+
+.tech-link, .tech-link:hover, .tech-link:hover .hidden {
+  color: #22BDC5;
 }
 
 .projects-link, .projects-link:hover, .projects-link:hover .hidden{
@@ -110,47 +181,72 @@ body {
   color: #FDA92E;
 }
 
+#home {
+  background: url('../images/ForrestFP.jpg') no-repeat center center fixed; 
+  background-color: black;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-blend-mode: hard-light;
+  border-bottom: 12vh solid #4AFD9C;
+  border-right: 100vw solid transparent;
+  height: 100vh;
+
+}
+
 #about {
   background-color: #4AFD9C;
   color: black;
+  border-bottom: 12vh solid #22BDC5;
+  border-right: 100vw solid transparent;
+  height: 100vh;
+  z-index: 2;
+  position: relative;
 }
 
-.section-title {
-  font-size: 5vmin;
+.about-blurb {
   max-width: 80vw;
-}
-
-.section-subtitle {
-  font-size: 3vmin;
 }
 
 #tech {
   background-color: #22BDC5;
   color: #4AFD9C;
+  border-bottom: 12vh solid rgb(194, 27, 180);
+  border-right: 100vw solid transparent;
+  height: 100vh;
+  z-index: 2;
+  position: relative;
 }
 
 #projects {
   background-color: rgb(194, 27, 180);
   color: #22BDC5;
+  border-bottom: 12vh solid #FDA92E;
+  border-right: 100vw solid transparent;
+  height: 100vh;
+  z-index: 2;
+  position: relative;
 }
 
 #contact {
-  background-color: #FC9F77;
+  background-color: #FDA92E;
   color: rgb(194, 27, 180);
+  border-bottom: 12vh solid black;
+  border-right: 100vw solid transparent;
+  height: 100vh;
+  z-index: 2;
+  position: relative;
 }
 
-@media (max-width: 768px) {
-  .links-container {
-    width: 27vmin;
-    font-size: 9vmin;
+@media only screen and (max-width: 768px) {
+  .nav-box {
+    right: 17vw;
   }
-
-  .top-link img, .top-link:hover {
-    height: 8vmin;
-    padding-top: 1vmin;
+  .nav-link-container {
+    margin: 10px 0px 0px;
   }
-
-  .nav-link, .nav-link:hover {
-    width: 5vmin;
+  .pop-down {
+    letter-spacing: 5px;
   }
 }

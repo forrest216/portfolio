@@ -249,6 +249,9 @@ img {
     -o-background-size: cover;
     background-size: cover;
   }
+  #home {
+    background: none;
+  }
   .nav-links-container {
     margin-right: 17vw;
   }

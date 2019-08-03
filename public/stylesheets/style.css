@@ -232,12 +232,22 @@ img {
 }
 
 @media only screen and (max-width: 768px) {
-  #home {
-    background: url('../images/ForrestFP.jpg') top center / 100vh no-repeat fixed;
+  body:before {
+    content: "";
+    display: block;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -10;
+    background: url('../images/ForrestFP.jpg') no-repeat center center;
     background-color: black;
     background-blend-mode: hard-light;
     -webkit-background-size: cover;
-    background-size: cover; 
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
   }
   .nav-links-container {
     margin-right: 17vw;

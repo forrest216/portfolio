@@ -242,13 +242,16 @@ img {
     background-blend-mode: hard-light;
   }
   .nav-links-container {
-    margin-right: 17vw;
+    /* margin-right: 17vw; */
   }
   .nav-link-container {
+    width: 30px;
     margin: 10px 0px 0px;
   }
   .pop-down {
     letter-spacing: 5px;
+    margin-top: 0.5vh;
+    width: 30px;
   }
 }
 

@@ -10,6 +10,7 @@ html {
 body {
   font-family: 'Roboto Mono', monospace;
   background: black;
+  height: 100vh;
 }
 
 img {
@@ -265,6 +266,7 @@ img {
   -o-animation: moveX 3.5s linear 0s infinite alternate, moveY 3.9s linear 0s infinite alternate;
   -moz-animation: moveX 3.5s linear 0s infinite alternate, moveY 3.9s linear 0s infinite alternate;
   -webkit-animation: moveX 3.5s linear 0s infinite alternate, moveY 3.9s linear 0s infinite alternate;
+  animation-delay: .5s;
 }
 
 #tech .c {
@@ -273,6 +275,7 @@ img {
   -o-animation: moveX 4s linear 0s infinite alternate, moveY 4.4s linear 0s infinite alternate;
   -moz-animation: moveX 4s linear 0s infinite alternate, moveY 4.4s linear 0s infinite alternate;
   -webkit-animation: moveX 4s linear 0s infinite alternate, moveY 4.4s linear 0s infinite alternate;
+  animation-delay: 1s;
 }
 
 #tech .d {
@@ -281,6 +284,7 @@ img {
   -o-animation: moveX 4.5s linear 0s infinite alternate, moveY 4.9s linear 0s infinite alternate;
   -moz-animation: moveX 4.5s linear 0s infinite alternate, moveY 4.9s linear 0s infinite alternate;
   -webkit-animation: moveX 4.5s linear 0s infinite alternate, moveY 4.9s linear 0s infinite alternate;
+  animation-delay: 1.5s;
 }
 
 #tech .e {
@@ -289,6 +293,7 @@ img {
   -o-animation: moveX 5s linear 0s infinite alternate, moveY 5.4s linear 0s infinite alternate;
   -moz-animation: moveX 5s linear 0s infinite alternate, moveY 5.4s linear 0s infinite alternate;
   -webkit-animation: moveX 5s linear 0s infinite alternate, moveY 5.4s linear 0s infinite alternate;
+  animation-delay: 2s;
 }
 #tech .f {
   position: absolute;
@@ -296,6 +301,7 @@ img {
   -o-animation: moveXX 3s linear 0s infinite alternate, moveYY 3.4s linear 0s infinite alternate;
   -moz-animation: moveXX 3s linear 0s infinite alternate, moveYY 3.4s linear 0s infinite alternate;
   -webkit-animation: moveXX 3s linear 0s infinite alternate, moveYY 3.4s linear 0s infinite alternate;
+  animation-delay: 2.5s;
 }
 
 #tech .g {
@@ -304,6 +310,7 @@ img {
   -o-animation: moveXX 3.5s linear 0s infinite alternate, moveYY 3.9s linear 0s infinite alternate;
   -moz-animation: moveXX 3.5s linear 0s infinite alternate, moveYY 3.9s linear 0s infinite alternate;
   -webkit-animation: moveXX 3.5s linear 0s infinite alternate, moveYY 3.9s linear 0s infinite alternate;
+  animation-delay: 3s;
 }
 
 #tech .h {
@@ -312,6 +319,7 @@ img {
   -o-animation: moveXX 4s linear 0s infinite alternate, moveYY 4.4s linear 0s infinite alternate;
   -moz-animation: moveXX 4s linear 0s infinite alternate, moveYY 4.4s linear 0s infinite alternate;
   -webkit-animation: moveXX 4s linear 0s infinite alternate, moveYY 4.4s linear 0s infinite alternate;
+  animation-delay: 3.5s;
 }
 
 #tech .i {
@@ -320,6 +328,7 @@ img {
   -o-animation: moveXX 4.5s linear 0s infinite alternate, moveYY 4.9s linear 0s infinite alternate;
   -moz-animation: moveXX 4.5s linear 0s infinite alternate, moveYY 4.9s linear 0s infinite alternate;
   -webkit-animation: moveXX 4.5s linear 0s infinite alternate, moveYY 4.9s linear 0s infinite alternate;
+  animation-delay: 4s;
 }
 
 #tech .j {
@@ -328,6 +337,7 @@ img {
   -o-animation: moveXX 5s linear 0s infinite alternate, moveYY 5.4s linear 0s infinite alternate;
   -moz-animation: moveXX 5s linear 0s infinite alternate, moveYY 5.4s linear 0s infinite alternate;
   -webkit-animation: moveXX 5s linear 0s infinite alternate, moveYY 5.4s linear 0s infinite alternate;
+  animation-delay: 4.5s;
 }
 
 @-webkit-keyframes moveX {
@@ -355,26 +365,26 @@ img {
   from { left: 90vw; } to { left: 0; }
 }
 @-webkit-keyframes moveY {
-  from { top: 0; } to { top: 80vh; }
+  from { top: 0; } to { top: 75vh; }
 }
 @-moz-keyframes moveY {
-  from { top: 0; } to { top: 80vh; }
+  from { top: 0; } to { top: 75vh; }
 }
 @-o-keyframes moveY {
-  from { top: 0; } to { top: 80vh; }
+  from { top: 0; } to { top: 75vh; }
 }
 @keyframes moveY {
-  from { top: 0; } to { top: 80vh; }
+  from { top: 0; } to { top: 75vh; }
 }
 @-webkit-keyframes moveYY {
-  from { top: 80vh; } to { top: 0; }
+  from { top: 75vh; } to { top: 0; }
 }
 @-moz-keyframes moveYY {
-  from { top: 80vh; } to { top: 0; }
+  from { top: 75vh; } to { top: 0; }
 }
 @-o-keyframes moveYY {
-  from { top: 80vh; } to { top: 0; }
+  from { top: 75vh; } to { top: 0; }
 }
 @keyframes moveYY {
-  from { top: 80vh; } to { top: 0; }
+  from { top: 75vh; } to { top: 0; }
 }

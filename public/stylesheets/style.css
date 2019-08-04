@@ -1,7 +1,7 @@
 @import 'normalize.css';
 @import 'bulma.css';
 
-
+/* ---------------Top-level----------------- */
 html {
   background: black;
   scroll-behavior: smooth;
@@ -17,6 +17,7 @@ img {
   max-width: unset;
 }
 
+/* ---------------Nav elements--------------- */ /* Clean up this mess */
 .nav-box {
   width: 100%;
   line-height: 1; 
@@ -38,88 +39,8 @@ img {
   padding-right: 1vw;
 }
 
-.tech-image {
-  width: 15vw;
-  max-height: 15vw;
-}
-
 .nav-link {
   z-index: 3;
-}
-
-.top-panel {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.section-title {
-  margin-bottom: 2vh;
-  font-size: 5vmin;
-  width: 100vw;
-}
-
-.about-intro {
-  padding: 0 1vw;
-  display: flex;
-  flex-direction: row;
-  font-size: 3vmin;
-  width: 80vw;
-  height: 10vh;
-}
-
-.about-content {
-  padding: 0 1vw;
-  display: flex;
-  flex-direction: row;
-  font-size: 3vmin;
-  width: 100vw;
-  height: 30vh;
-  align-items: center;
-  border-bottom: 1px solid black;
-}
-
-#about div:nth-of-type(2) {
-  border-top: 1px solid black;
-}
-
-.main-image {
-  height: 90vw;
-  width: 90vw;
-}
-
-.about-image {
-  height: 100%;
-  max-width: 70vw;
-}
-
-.forrest {
-  padding-left: 5px;
-  display: flex;
-  width: 30vw;
-  z-index: 1;
-  position: fixed;
-  top: 70vh;
-  font-size: 4vmin;
-  color: #4AFD9C;
-}
-
-.top-link img {
-  height: 5vmin;
-  padding-top: .8vmin;
-}
-
-.top-link:hover #upBlack {
-  display: none;
-}
-
-.top-link:hover #upWhite {
-  display: inherit;
-}
-
-.top-link #upWhite {
-  display: none;
 }
 
 .nav-link-container {
@@ -169,6 +90,34 @@ img {
   color: #FDA92E;
 }
 
+.top-link img {
+  height: 5vmin;
+  padding-top: .8vmin;
+}
+
+.top-link:hover #upBlack {
+  display: none;
+}
+
+.top-link:hover #upWhite {
+  display: inherit;
+}
+
+.top-link #upWhite {
+  display: none;
+}
+
+.section-title {
+  margin-bottom: 2vh;
+  font-size: 5vmin;
+  width: 100vw;
+}
+
+div p {
+  padding: 0 1vw;
+}
+
+/* ---------------Home------------------ */
 #home {
   background: url('../images/ForrestFP.jpg') no-repeat center center fixed; 
   background-color: black;
@@ -180,9 +129,32 @@ img {
   border-bottom: 12vh solid #4AFD9C;
   border-right: 100vw solid transparent;
   height: 100vh;
-
 }
 
+.forrest {
+  padding-left: 5px;
+  display: flex;
+  width: 40vw;
+  z-index: 1;
+  position: fixed;
+  top: 70vh;
+  font-size: 4vmin;
+  color: #4AFD9C;
+}
+
+.top-panel {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-image {
+  height: 90vw;
+  width: 90vw;
+}
+
+/* --------------About------------------ */
 #about {
   background-color: #4AFD9C;
   color: black;
@@ -191,6 +163,42 @@ img {
   height: 152vh;
   z-index: 2;
   position: relative;
+}
+
+.about-intro {
+  padding: 0 1vw;
+  display: flex;
+  flex-direction: row;
+  font-size: 3vmin;
+  width: 80vw;
+  height: 10vh;
+}
+
+.about-content {
+  padding: 0 1vw;
+  display: flex;
+  flex-direction: row;
+  font-size: 3vmin;
+  width: 100vw;
+  height: 30vh;
+  align-items: center;
+  border-bottom: 1px solid black;
+}
+
+#about div:nth-of-type(2) {
+  border-top: 1px solid black;
+}
+
+.about-image {
+  height: 100%;
+  max-width: 70vw;
+  image-orientation: from-image;
+}
+
+/* --------------Tech------------------ */ /* Icon animations at bottom */
+.tech-image {
+  width: 15vw;
+  max-height: 15vw;
 }
 
 #tech {
@@ -203,34 +211,109 @@ img {
   position: relative;
 }
 
+/* --------------Projects------------------ */
 #projects {
   background-color: rgb(194, 27, 180);
   color: #22BDC5;
   border-bottom: 12vh solid #FDA92E;
   border-right: 100vw solid transparent;
-  height: 115vh;
+  height: 197vh;
   z-index: 2;
   position: relative;
 }
 
+.projects-intro {
+  padding: 0 1vw;
+  display: flex;
+  flex-direction: row;
+  font-size: 4vmin;
+  width: 80vw;
+  height: 10vh;
+}
+
+.projects-content {
+  padding: 0 1vw;
+  display: flex;
+  flex-direction: row;
+  font-size: 2vw;
+  width: 100vw;
+  height: 55vh;
+  align-items: center;
+  border-bottom: 1px solid black;
+  background-color: rgb(0,0,0,0.3);
+}
+
+.project-text-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+#projects div:nth-of-type(2) {
+  border-top: 1px solid black;
+}
+
+.projects-image {
+  max-height: 100%;
+  max-width: 50vw;
+}
+
+.project-title {
+  font-size: 2.2vw;
+  font-weight: bold;
+  width: fit-content;
+  padding: 0;
+  color: rgb(194, 27, 180);
+  background-color: #22BDC5;
+  border-radius: 10px;
+  padding: 1vw;
+  margin: 0 1vw 1vh 1vw;
+}
+
+p strong {
+  color: #22BDC5;
+  font-weight: bold;
+  background-color: rgb(0,0,0,0.2)
+}
+
+/* --------------Contact------------------ */
 #contact {
   background-color: #FDA92E;
   color: rgb(194, 27, 180);
   border-bottom: 12vh solid black;
   border-right: 100vw solid transparent;
-  height: 115vh;
+  height: 90vh;
   z-index: 2;
   position: relative;
 }
 
-#footer {
-  border-bottom: 12vh solid black;
-  border-right: 100vw solid transparent;
-  position: absolute;
-  bottom: -400vh;
-  left: 0px;
+#contact img {
+  width: 20vw;
 }
 
+.contact-icons {
+  width: 100vw;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  left: 2vw;
+}
+
+/* --------------Footer------------------ */
+#footer {
+  height: 10vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+}
+
+/* --------------Mobile------------------ */
 @media only screen and (max-width: 768px) {
   #home {
     background: url('../images/ForrestFP.jpg') no-repeat center left scroll; 
@@ -241,9 +324,6 @@ img {
     background-size: cover;
     background-blend-mode: hard-light;
   }
-  .nav-links-container {
-    /* margin-right: 17vw; */
-  }
   .nav-link-container {
     width: 30px;
     margin: 10px 0px 0px;
@@ -253,121 +333,123 @@ img {
     margin-top: 0.5vh;
     width: 30px;
   }
+  .projects-content {
+    flex-direction: column;
+    justify-content: center;
+  }
+  #projects :nth-child(4) {
+    flex-direction: column-reverse;
+  }
+  .projects-image {
+    max-width: 90vw;
+  }
 }
 
-/* Bouncing icon animations */
+/* ------------Bouncing icon animations-------------- */
+
 
 #tech .a {
   position: absolute;
-  animation: moveX 3s linear 0s infinite alternate, moveY 3.4s linear 0s infinite alternate;
-  -o-animation: moveX 3s linear 0s infinite alternate, moveY 3.4s linear 0s infinite alternate;
-  -moz-animation: moveX 3s linear 0s infinite alternate, moveY 3.4s linear 0s infinite alternate;
-  -webkit-animation: moveX 3s linear 0s infinite alternate, moveY 3.4s linear 0s infinite alternate;
+  animation: moveX 3s linear 0s infinite alternate, moveY 3.4s linear 1s infinite alternate;
+  -o-animation: moveX 3s linear 0s infinite alternate, moveY 3.4s linear 1s infinite alternate;
+  -moz-animation: moveX 3s linear 0s infinite alternate, moveY 3.4s linear 1s infinite alternate;
+  -webkit-animation: moveX 3s linear 0s infinite alternate, moveY 3.4s linear 1s infinite alternate;
 }
 
 #tech .b {
   position: absolute;
-  animation: moveX 3.5s linear 0s infinite alternate, moveY 3.9s linear 0s infinite alternate;
-  -o-animation: moveX 3.5s linear 0s infinite alternate, moveY 3.9s linear 0s infinite alternate;
-  -moz-animation: moveX 3.5s linear 0s infinite alternate, moveY 3.9s linear 0s infinite alternate;
-  -webkit-animation: moveX 3.5s linear 0s infinite alternate, moveY 3.9s linear 0s infinite alternate;
-  animation-delay: .5s;
+  animation: moveX 3.5s linear 0.5s infinite alternate, moveY 3.9s linear 0.2s infinite alternate;
+  -o-animation: moveX 3.5s linear 0.5s infinite alternate, moveY 3.9s linear 0.2s infinite alternate;
+  -moz-animation: moveX 3.5s linear 0.5s infinite alternate, moveY 3.9s linear 0.2s infinite alternate;
+  -webkit-animation: moveX 3.5s linear 0.5s infinite alternate, moveY 3.9s linear 0.2s infinite alternate;
 }
 
 #tech .c {
   position: absolute;
-  animation: moveX 4s linear 0s infinite alternate, moveY 4.4s linear 0s infinite alternate;
-  -o-animation: moveX 4s linear 0s infinite alternate, moveY 4.4s linear 0s infinite alternate;
-  -moz-animation: moveX 4s linear 0s infinite alternate, moveY 4.4s linear 0s infinite alternate;
-  -webkit-animation: moveX 4s linear 0s infinite alternate, moveY 4.4s linear 0s infinite alternate;
-  animation-delay: 1s;
+  animation: moveX 4s linear 1s infinite alternate, moveY 4.4s linear 1.4s infinite alternate;
+  -o-animation: moveX 4s linear 1s infinite alternate, moveY 4.4s linear 1.4s infinite alternate;
+  -moz-animation: moveX 4s linear 1s infinite alternate, moveY 4.4s linear 1.4s infinite alternate;
+  -webkit-animation: moveX 4s linear 1s infinite alternate, moveY 4.4s linear 1.4s infinite alternate;
 }
 
 #tech .d {
   position: absolute;
-  animation: moveX 4.5s linear 0s infinite alternate, moveY 4.9s linear 0s infinite alternate;
-  -o-animation: moveX 4.5s linear 0s infinite alternate, moveY 4.9s linear 0s infinite alternate;
-  -moz-animation: moveX 4.5s linear 0s infinite alternate, moveY 4.9s linear 0s infinite alternate;
-  -webkit-animation: moveX 4.5s linear 0s infinite alternate, moveY 4.9s linear 0s infinite alternate;
-  animation-delay: 1.5s;
+  animation: moveX 4.5s linear 1.5s infinite alternate, moveY 4.9s linear 1.2s infinite alternate;
+  -o-animation: moveX 4.5s linear 1.5s infinite alternate, moveY 4.9s linear 1.2s infinite alternate;
+  -moz-animation: moveX 4.5s linear 1.5s infinite alternate, moveY 4.9s linear 1.2s infinite alternate;
+  -webkit-animation: moveX 4.5s linear 1.5s infinite alternate, moveY 4.9s linear 1.2s infinite alternate;
 }
 
 #tech .e {
   position: absolute;
-  animation: moveX 5s linear 0s infinite alternate, moveY 5.4s linear 0s infinite alternate;
-  -o-animation: moveX 5s linear 0s infinite alternate, moveY 5.4s linear 0s infinite alternate;
-  -moz-animation: moveX 5s linear 0s infinite alternate, moveY 5.4s linear 0s infinite alternate;
-  -webkit-animation: moveX 5s linear 0s infinite alternate, moveY 5.4s linear 0s infinite alternate;
-  animation-delay: 2s;
+  animation: moveX 5s linear 2s infinite alternate, moveY 5.4s linear 2.3s infinite alternate;
+  -o-animation: moveX 5s linear 2s infinite alternate, moveY 5.4s linear 2.3s infinite alternate;
+  -moz-animation: moveX 5s linear 2s infinite alternate, moveY 5.4s linear 2.3s infinite alternate;
+  -webkit-animation: moveX 5s linear 2s infinite alternate, moveY 5.4s linear 2.3s infinite alternate;
 }
 #tech .f {
   position: absolute;
-  animation: moveXX 3s linear 0s infinite alternate, moveYY 3.4s linear 0s infinite alternate;
-  -o-animation: moveXX 3s linear 0s infinite alternate, moveYY 3.4s linear 0s infinite alternate;
-  -moz-animation: moveXX 3s linear 0s infinite alternate, moveYY 3.4s linear 0s infinite alternate;
-  -webkit-animation: moveXX 3s linear 0s infinite alternate, moveYY 3.4s linear 0s infinite alternate;
-  animation-delay: 2.5s;
+  animation: moveXX 3s linear 2.5s infinite alternate, moveYY 3.4s linear 2.8s infinite alternate;
+  -o-animation: moveXX 3s linear 2.5s infinite alternate, moveYY 3.4s linear 2.8s infinite alternate;
+  -moz-animation: moveXX 3s linear 2.5s infinite alternate, moveYY 3.4s linear 2.8s infinite alternate;
+  -webkit-animation: moveXX 3s linear 2.5s infinite alternate, moveYY 3.4s linear 2.8s infinite alternate;
 }
 
 #tech .g {
   position: absolute;
-  animation: moveXX 3.5s linear 0s infinite alternate, moveYY 3.9s linear 0s infinite alternate;
-  -o-animation: moveXX 3.5s linear 0s infinite alternate, moveYY 3.9s linear 0s infinite alternate;
-  -moz-animation: moveXX 3.5s linear 0s infinite alternate, moveYY 3.9s linear 0s infinite alternate;
-  -webkit-animation: moveXX 3.5s linear 0s infinite alternate, moveYY 3.9s linear 0s infinite alternate;
-  animation-delay: 3s;
+  animation: moveXX 3.5s linear 3s infinite alternate, moveYY 3.9s linear 3.5s infinite alternate;
+  -o-animation: moveXX 3.5s linear 3s infinite alternate, moveYY 3.9s linear 3.5s infinite alternate;
+  -moz-animation: moveXX 3.5s linear 3s infinite alternate, moveYY 3.9s linear 3.5s infinite alternate;
+  -webkit-animation: moveXX 3.5s linear 3s infinite alternate, moveYY 3.9s linear 3.5s infinite alternate;
 }
 
 #tech .h {
   position: absolute;
-  animation: moveXX 4s linear 0s infinite alternate, moveYY 4.4s linear 0s infinite alternate;
-  -o-animation: moveXX 4s linear 0s infinite alternate, moveYY 4.4s linear 0s infinite alternate;
-  -moz-animation: moveXX 4s linear 0s infinite alternate, moveYY 4.4s linear 0s infinite alternate;
-  -webkit-animation: moveXX 4s linear 0s infinite alternate, moveYY 4.4s linear 0s infinite alternate;
-  animation-delay: 3.5s;
+  animation: moveXX 4s linear 3.5s infinite alternate, moveYY 4.4s linear 3.1s infinite alternate;
+  -o-animation: moveXX 4s linear 3.5s infinite alternate, moveYY 4.4s linear 3.1s infinite alternate;
+  -moz-animation: moveXX 4s linear 3.5s infinite alternate, moveYY 4.4s linear 3.1s infinite alternate;
+  -webkit-animation: moveXX 4s linear 3.5s infinite alternate, moveYY 4.4s linear 3.1s infinite alternate;
 }
 
 #tech .i {
   position: absolute;
-  animation: moveXX 4.5s linear 0s infinite alternate, moveYY 4.9s linear 0s infinite alternate;
-  -o-animation: moveXX 4.5s linear 0s infinite alternate, moveYY 4.9s linear 0s infinite alternate;
-  -moz-animation: moveXX 4.5s linear 0s infinite alternate, moveYY 4.9s linear 0s infinite alternate;
-  -webkit-animation: moveXX 4.5s linear 0s infinite alternate, moveYY 4.9s linear 0s infinite alternate;
-  animation-delay: 4s;
+  animation: moveXX 4.5s linear 4s infinite alternate, moveYY 4.9s linear 4.3s infinite alternate;
+  -o-animation: moveXX 4.5s linear 4s infinite alternate, moveYY 4.9s linear 4.3s infinite alternate;
+  -moz-animation: moveXX 4.5s linear 4s infinite alternate, moveYY 4.9s linear 4.3s infinite alternate;
+  -webkit-animation: moveXX 4.5s linear 4s infinite alternate, moveYY 4.9s linear 4.3s infinite alternate;
 }
 
 #tech .j {
   position: absolute;
-  animation: moveXX 5s linear 0s infinite alternate, moveYY 5.4s linear 0s infinite alternate;
-  -o-animation: moveXX 5s linear 0s infinite alternate, moveYY 5.4s linear 0s infinite alternate;
-  -moz-animation: moveXX 5s linear 0s infinite alternate, moveYY 5.4s linear 0s infinite alternate;
-  -webkit-animation: moveXX 5s linear 0s infinite alternate, moveYY 5.4s linear 0s infinite alternate;
-  animation-delay: 4.5s;
+  animation: moveXX 5s linear 4.5s infinite alternate, moveYY 5.4s linear 4.3s infinite alternate;
+  -o-animation: moveXX 5s linear 4.5s infinite alternate, moveYY 5.4s linear 4.3s infinite alternate;
+  -moz-animation: moveXX 5s linear 4.5s infinite alternate, moveYY 5.4s linear 4.3s infinite alternate;
+  -webkit-animation: moveXX 5s linear 4.5s infinite alternate, moveYY 5.4s linear 4.3s infinite alternate;
 }
 
 @-webkit-keyframes moveX {
-  from { left: 0; } to { left: 90vw; }
+  from { left: 0; } to { left: 87vw; }
 }
 @-moz-keyframes moveX {
-  from { left: 0; } to { left: 90vw; }
+  from { left: 0; } to { left: 87vw; }
 }
 @-o-keyframes moveX {
-  from { left: 0; } to { left: 90vw; }
+  from { left: 0; } to { left: 87vw; }
 }
 @keyframes moveX {
-  from { left: 0; } to { left: 90vw; }
+  from { left: 0; } to { left: 87vw; }
 }
 @-webkit-keyframes moveXX {
-  from { left: 90vw; } to { left: 0; }
+  from { left: 87vw; } to { left: 0; }
 }
 @-moz-keyframes moveXX {
-  from { left: 90vw; } to { left: 0; }
+  from { left: 87vw; } to { left: 0; }
 }
 @-o-keyframes moveXX {
-  from { left: 90vw; } to { left: 0; }
+  from { left: 87vw; } to { left: 0; }
 }
 @keyframes moveXX {
-  from { left: 90vw; } to { left: 0; }
+  from { left: 87vw; } to { left: 0; }
 }
 @-webkit-keyframes moveY {
   from { top: 0; } to { top: 75vh; }

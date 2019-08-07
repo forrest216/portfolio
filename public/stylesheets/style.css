@@ -446,6 +446,14 @@ p button:hover {
   -webkit-animation: moveXX 5s linear 4.5s infinite alternate, moveYY 5.4s linear 4.3s infinite alternate;
 }
 
+#tech .k {
+  position: absolute;
+  animation: moveXX 5.5s linear 4.5s infinite alternate, moveYY 4.5s linear 4.3s infinite alternate;
+  -o-animation: moveXX 5.5s linear 4.5s infinite alternate, moveYY 4.5s linear 4.3s infinite alternate;
+  -moz-animation: moveXX 5.5s linear 4.5s infinite alternate, moveYY 4.5s linear 4.3s infinite alternate;
+  -webkit-animation: moveXX 5.5s linear 4.5s infinite alternate, moveYY 4.5s linear 4.3s infinite alternate;
+}
+
 @-webkit-keyframes moveX {
   from { left: 0; } to { left: 87vw; }
 }

@@ -235,7 +235,7 @@ div p {
   padding: 0 1vw;
   display: flex;
   flex-direction: row;
-  font-size: 2vw;
+  font-size: 1.7vw;
   width: 100vw;
   height: 55vh;
   align-items: center;
@@ -365,8 +365,6 @@ p button:hover {
 }
 
 /* ------------Bouncing icon animations-------------- */
-
-
 #tech .a {
   position: absolute;
   animation: moveX 3s linear 0s infinite alternate, moveY 3.4s linear 1s infinite alternate;
